@@ -1,0 +1,68 @@
+@mixin hideScrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@mixin textEllipsis($count) {
+  word-break: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $count;
+  -webkit-box-orient: vertical;
+}
+
+@mixin visuallyHiden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin objectFit {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+// адаптивы
+
+@mixin _768 {
+  @media screen and (min-width: $widthXs) {
+    @content;
+  }
+}
+
+@mixin _1024 {
+  @media screen and (min-width: $widthSm) {
+    @content;
+  }
+}
+
+@mixin _1280 {
+  @media screen and (min-width: $widthMd) {
+    @content;
+  }
+}
+
+@mixin _1366 {
+  @media screen and (min-width: $widthLg) {
+    @content;
+  }
+}
+
+@mixin _1440 {
+  @media screen and (min-width: $widthBig) {
+    @content;
+  }
+}

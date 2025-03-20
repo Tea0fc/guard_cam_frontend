@@ -1,0 +1,55 @@
+@mixin large {
+  .label {
+    font: $fontP6;
+  }
+
+  .input {
+    font: $fontP6;
+  }
+
+  .helpText {
+    font: $fontP8;
+  }
+}
+
+@mixin medium {
+  .input {
+    font: $fontP7;
+  }
+
+  .label {
+    font: $fontP7;
+  }
+
+  .helpText {
+    font: $fontP8;
+  }
+}
+
+@mixin small {
+  .input {
+    font: $fontP8;
+  }
+
+  .label {
+    font: $fontP8;
+  }
+
+  .helpText {
+    font: $fontP9;
+  }
+}
+
+@mixin xsmall {
+  .input {
+    font: $fontP9;
+  }
+
+  .label {
+    font: $fontP9;
+  }
+
+  .helpText {
+    font: $fontP9;
+  }
+}

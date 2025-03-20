@@ -1,0 +1,16 @@
+{
+  "theme_color": "#3278ff",
+  "background_color": "#dde5f3",
+  "icons": [],
+  "screenshots": [],
+  "orientation": "any",
+  "display": "standalone",
+  "dir": "auto",
+  "lang": "ru-RU",
+  "name": "seller",
+  "short_name": "seller",
+  "start_url": "https://seller.ru/",
+  "scope": "https://seller.ru/",
+  "description": "Some description",
+  "id": "https://seller.ru/"
+}

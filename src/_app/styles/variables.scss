@@ -1,0 +1,184 @@
+// breakpoints
+$widthBig: 1600px;
+$widthLg: 1300px;
+$widthMd: 1200px;
+$widthSm: 1000px;
+$widthXs: 767px;
+
+// fonts
+$fontFamilyMain: 'Involve', 'Arial', sans-serif;
+$fontH1: 600 #{96px} / #{120%} $fontFamilyMain;
+$fontH2: 600 #{48px} / #{120%} $fontFamilyMain;
+$fontH3: 600 #{40px} / #{120%} $fontFamilyMain;
+$fontH4: 600 #{36px} / #{120%} $fontFamilyMain;
+$fontH5: 600 #{32px} / #{120%} $fontFamilyMain;
+$fontH6: 600 #{28px} / #{120%} $fontFamilyMain;
+$fontH7: 600 #{24px} / #{120%} $fontFamilyMain;
+$fontH8: 600 #{20px} / #{120%} $fontFamilyMain;
+$fontH9: 600 #{18px} / #{120%} $fontFamilyMain;
+$fontH10: 600 #{16px} / #{120%} $fontFamilyMain;
+$fontH11: 600 #{14px} / #{120%} $fontFamilyMain;
+$fontH12: 600 #{12px} / #{120%} $fontFamilyMain;
+$fontH13: 600 #{10px} / #{120%} $fontFamilyMain;
+$fontP1: 400 #{48px} / #{120%} $fontFamilyMain;
+$fontP2: 400 #{40px} / #{120%} $fontFamilyMain;
+$fontP3: 400 #{32px} / #{120%} $fontFamilyMain;
+$fontP4: 400 #{20px} / #{120%} $fontFamilyMain;
+$fontP5: 400 #{18px} / #{120%} $fontFamilyMain;
+$fontP6: 400 #{16px} / #{120%} $fontFamilyMain;
+$fontP7: 400 #{14px} / #{120%} $fontFamilyMain;
+$fontP8: 400 #{12px} / #{120%} $fontFamilyMain;
+$fontP9: 400 #{10px} / #{120%} $fontFamilyMain;
+
+// Styleguide
+$whiteMain: #fff;
+$white600: #ffffffe0;
+$white500: #ffffffa3;
+$white400: #fff6;
+$white300: #ffffff24;
+$white200: #ffffff17;
+$white100: #ffffff0f;
+$blackMain: #08091c;
+$black600: #08091ce0;
+$black500: #08091c99;
+$black400: #08091c5c;
+$black300: #08091c1f;
+$black200: #08091c14;
+$black100: #08091c0a;
+$blueMain: #454de5;
+$blue800: #1721e5;
+$blue700: #2e37e5;
+$blue600: #454de5e0;
+$blue500: #454de599;
+$blue400: #454de55c;
+$blue300: #454de524;
+$blue200: #454de51a;
+$blue100: #454de50f;
+$redMain: #e54545;
+$red800: #e51717;
+$red700: #e52e2e;
+$red600: #e54545e0;
+$red500: #e5454599;
+$red400: #e545455c;
+$red300: #e5454524;
+$red200: #e545451a;
+$red100: #e545450f;
+$orangeMain: #f90;
+$orange800: #e08600;
+$orange700: #ec8e00;
+$orange600: #ff9900e0;
+$orange500: #f909;
+$orange400: #ff99005c;
+$orange300: #ff99001f;
+$orange200: #ff99001a;
+$orange100: #ff99000f;
+$greenMain: #3d995c;
+$green800: #3d786c;
+$green700: #3d876c;
+$green600: #3d995c;
+$green500: #3d995ce0;
+$green400: #3d995c99;
+$green300: #3d995c5c;
+$green200: #3d995c24;
+$green200: #3d995c1a;
+$green100: #3d995c0f;
+
+// colors
+
+$bgPrimary: $whiteMain;
+$bgPrimaryInverse: $black600;
+$bgSecondary: $black100;
+$bgSecondaryHover: $black200;
+$bgSecondaryActive: $black300;
+$bgSecondaryInverse: $black500;
+$bgDisabled: $black200;
+$bgAccent: $blueMain;
+$bgAccentHover: $blue700;
+$bgAccentActive: $blue800;
+$bgAccentSubdued: $blue100;
+$bgAccentSubduedHover: $blue200;
+$bgAccentSubduedActive: $blue300;
+$bgCritical: $redMain;
+$bgCriticalHover: $red700;
+$bgCriticalActive: $red800;
+$bgCriticalSubdued: $red100;
+$bgCriticalSubduedHover: $red200;
+$bgCriticalSubduedActive: $red300;
+$bgCautionSubdued: $orange100;
+$bgCautionSubduedHover: $orange200;
+$bgCautionSubduedActive: $orange300;
+$bgSuccessSubdued: $green100;
+$bgSuccessSubduedHover: $green200;
+$bgSuccessSubduedActive: $green300;
+
+// text
+$textPrimary: $blackMain;
+$textSecondary: $black500;
+$textDisabled: $black400;
+$textAccent: $blueMain;
+$textAccentHover: $blue700;
+$textAccentActive: $blue800;
+$textAccentSubdued: $blue100;
+$textAccentSubduedHover: $blue200;
+$textAccentSubduedActive: $blue300;
+$textCritical: $redMain;
+$textCriticalHover: $red700;
+$textCriticalActive: $red800;
+$textCaution: $orangeMain;
+$textCautionHover: $orange700;
+$textCautionActive: $orange800;
+$textSuccess: $greenMain;
+$textSuccessHover: $green700;
+$textSuccessActive: $green800;
+$textPrimaryInverse: $whiteMain;
+$textPrimaryOnColor: $whiteMain;
+
+// border
+$borderPrimary: $black300;
+$borderSecondary: $black200;
+$borderFocus: $blackMain;
+$borderAccent: $blueMain;
+$borderAccentHover: $blue700;
+$borderAccentActive: $blue800;
+$borderCritical: $redMain;
+$borderCaution: $orangeMain;
+$borderSuccess: $greenMain;
+
+// icon
+$iconPrimary: $blackMain;
+$iconSecondary: $black500;
+$iconDisabled: $black400;
+$iconAccent: $blueMain;
+$iconAccentHover: $blue700;
+$iconAccentActive: $blue800;
+$iconAccentSubdued: $blue100;
+$iconAccentSubduedHover: $blue200;
+$iconAccentSubduedActive: $blue300;
+$iconCritical: $redMain;
+$iconCriticalHover: $red700;
+$iconCriticalActive: $red800;
+$iconCaution: $orangeMain;
+$iconCautionHover: $orange700;
+$iconCautionActive: $orange800;
+$iconSuccess: $greenMain;
+$iconSuccessHover: $green700;
+$iconSuccessActive: $green800;
+$iconPrimaryInverse: $whiteMain;
+$iconPrimaryOnColor: $whiteMain;
+
+// border radius
+$borderRadiusLg: 8px;
+$borderRadiusMd: 6px;
+$borderRadiusSm: 4px;
+$borderRadiusSX: 2px;
+
+// shadow
+$shadowLg:
+  0 0 1px rgb(113 128 150 / 24%),
+  0 4px 4px -1px rgb(113 128 150 / 5%);
+$shadowMd:
+  0 0 1px rgb(113 128 150 / 24%),
+  0 2px 2px -1px rgb(113 128 150 / 5%);
+$shadowSm:
+  0 0 1px rgb(113 128 150 / 24%),
+  0 1px 1px -1px rgb(113 128 150 / 5%);

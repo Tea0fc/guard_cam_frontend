@@ -1,0 +1,85 @@
+@import './fonts/fonts';
+
+* {
+  padding: 0;
+  margin: 0;
+  scrollbar-width: thin;
+  scrollbar-color: $bgSecondary transparent;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 8px;
+
+  &-thumb {
+    border-radius: 8px;
+    background-color: $bgSecondary;
+
+    &:hover {
+      background-color: $bgSecondaryHover;
+    }
+
+    &:active {
+      background-color: $bgSecondaryActive;
+    }
+  }
+}
+
+html {
+  scrollbar-gutter: stable;
+}
+
+body {
+  min-height: 100vh;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+}
+
+#__next {
+  padding: 0 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-height: inherit;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  outline: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+svg,
+img {
+  display: block;
+}

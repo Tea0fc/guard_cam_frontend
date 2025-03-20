@@ -1,0 +1,174 @@
+@import './ButtonSize.module';
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  border-radius: $borderRadiusSm;
+  border: 1px solid transparent;
+  max-width: max-content;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+
+  &:disabled {
+    cursor: default;
+  }
+
+  svg {
+    display: flex;
+    align-items: inherit;
+    transition: fill 0.3s ease;
+
+    path {
+      transition: fill 0.3s ease;
+    }
+  }
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.center {
+  justify-content: center;
+}
+
+.secondary,
+.clear {
+  svg {
+    fill: $iconAccent;
+
+    path {
+      fill: $iconAccent;
+    }
+  }
+}
+
+.primary {
+  background: $bgAccent;
+  color: $textPrimaryInverse;
+
+  @media (hover: hover) {
+    &:hover {
+      background: $bgAccentHover;
+    }
+  }
+
+  &:active {
+    background: $bgAccentActive;
+  }
+
+  svg {
+    fill: $iconPrimaryInverse;
+
+    path {
+      fill: $iconPrimaryInverse;
+    }
+  }
+}
+
+.secondary {
+  background: $bgSecondary;
+  color: $textAccent;
+
+  @media (hover: hover) {
+    &:hover {
+      background: $bgSecondaryHover;
+      color: $textAccentHover;
+
+      svg {
+        fill: $iconAccentHover;
+
+        path {
+          fill: $iconAccentHover;
+        }
+      }
+    }
+  }
+
+  &:active {
+    background: $bgSecondaryActive;
+    color: $textAccentActive;
+
+    svg {
+      fill: $iconAccentActive;
+
+      path {
+        fill: $iconAccentActive;
+      }
+    }
+  }
+}
+
+.clear {
+  background: transparent;
+  color: $textAccent;
+
+  @media (hover: hover) {
+    &:hover {
+      color: $textAccentHover;
+
+      svg {
+        fill: $iconAccentHover;
+
+        path {
+          fill: $iconAccentHover;
+        }
+      }
+    }
+  }
+
+  &:active {
+    color: $textAccentActive;
+
+    svg {
+      fill: $iconAccentActive;
+
+      path {
+        fill: $iconAccentActive;
+      }
+    }
+  }
+}
+
+.primary:disabled,
+.secondary:disabled {
+  background: $bgDisabled;
+  color: $textDisabled;
+
+  svg {
+    fill: $iconDisabled;
+
+    path {
+      fill: $iconDisabled;
+    }
+  }
+}
+
+.clear:disabled {
+  color: $textDisabled;
+
+  svg {
+    fill: $iconDisabled;
+
+    path {
+      fill: $iconDisabled;
+    }
+  }
+}
+
+.lg {
+  @include large;
+}
+
+.md {
+  @include medium;
+}
+
+.sm {
+  @include small;
+}
+
+.xs {
+  @include xsmall;
+}

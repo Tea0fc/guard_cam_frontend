@@ -1,0 +1,27 @@
+{
+  "extends": ["stylelint-config-standard-scss"],
+  "rules": {
+    "selector-class-pattern": [
+      "^[a-z][a-zA-Z0-9]+$",
+      {
+        "resolveNestedSelectors": true
+      }
+    ],
+    "selector-id-pattern": "^([a-zA-Z][a-zA-Z0-9]*|__next)$",
+    "scss/at-mixin-pattern": "^([a-zA-Z][a-zA-Z0-9]*|_\\d+)$",
+    "scss/dollar-variable-pattern": "^[a-zA-Z][a-zA-Z0-9]*$",
+    "scss/double-slash-comment-whitespace-inside": "always",
+    "value-keyword-case": [
+      "lower",
+      {
+        "camelCaseSvgKeywords": true
+      }
+    ],
+    "property-no-unknown": [
+      true,
+      {
+        "ignoreProperties": ["composes", "compose-with"]
+      }
+    ]
+  }
+}

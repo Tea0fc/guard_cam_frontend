@@ -1,0 +1,230 @@
+@import './InputSize.module';
+
+.wrapper {
+  position: relative;
+  width: 100%;
+
+  svg path {
+    fill: $iconSecondary;
+  }
+}
+
+.label {
+  display: inline-block;
+  color: $textSecondary;
+  margin: 0 0 4px;
+}
+
+.input {
+  width: 100%;
+  border: 1px solid transparent;
+  background: $bgSecondary;
+  outline: none;
+  transition: all 0.15s ease;
+  color: $textPrimary;
+
+  &::placeholder {
+    color: $textSecondary;
+  }
+
+  &:hover {
+    background: $bgSecondaryHover;
+
+    &::placeholder {
+      color: $textPrimary;
+    }
+  }
+
+  &:focus-visible {
+    border: 1px dashed $borderFocus;
+  }
+
+  &:focus {
+    background: $bgPrimary;
+    border: 1px solid $borderAccent;
+  }
+}
+
+.helpText {
+  margin: 2px 0 0;
+  color: $textSecondary;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition:
+    max-height 0.5s ease,
+    opacity 0.1s ease;
+}
+
+.disabled {
+  .input {
+    background: $bgDisabled;
+    color: $textDisabled;
+
+    &::placeholder {
+      color: $textDisabled;
+    }
+  }
+
+  .helpText {
+    color: $textDisabled;
+  }
+
+  svg {
+    cursor: default;
+  }
+}
+
+.error {
+  .input {
+    background: $bgPrimary;
+    border: 1px solid $borderCritical;
+    color: $textCritical;
+
+    &::placeholder {
+      color: $textCritical;
+    }
+  }
+
+  .helpText {
+    color: $textCritical;
+  }
+
+  svg path {
+    fill: $iconCritical;
+  }
+}
+
+.success {
+  .input {
+    background: $bgPrimary;
+    border: 1px solid $borderSuccess;
+    color: $textSuccess;
+
+    &::placeholder {
+      color: $textSuccess;
+    }
+  }
+
+  .helpText {
+    color: $textSuccess;
+  }
+
+  svg path {
+    fill: $iconSuccess;
+  }
+}
+
+.warning {
+  .input {
+    background: $bgPrimary;
+    border: 1px solid $borderCaution;
+    color: $textCaution;
+
+    &::placeholder {
+      color: $textCaution;
+    }
+  }
+
+  .helpText {
+    color: $textCaution;
+  }
+
+  svg path {
+    fill: $iconCaution;
+  }
+}
+
+.noReset .input {
+  padding: 14px 18px;
+}
+
+.row {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+
+  svg path {
+    fill: $iconSecondary;
+  }
+}
+
+.showHelpText .helpText {
+  max-height: 1000px;
+  opacity: 1;
+}
+
+.reset {
+  position: absolute;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: $bgSecondaryHover;
+  }
+
+  &:active {
+    background: $bgSecondaryActive;
+  }
+
+  svg {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    path {
+      fill: $iconPrimary;
+    }
+  }
+}
+
+.input:-moz-autofill {
+  appearance: none;
+  background: $bgSecondary;
+  color: $textPrimary;
+}
+
+.input:-webkit-autofill {
+  appearance: none;
+  background: $bgSecondary;
+  -webkit-text-fill-color: $textPrimary;
+  color: $textPrimary;
+}
+
+.input:-moz-autofill:hover,
+.input:-moz-autofill:focus {
+  appearance: none;
+  background: $bgSecondary;
+  color: $textPrimary;
+}
+
+.input:-webkit-autofill:hover,
+.input:-webkit-autofill:focus {
+  appearance: none;
+  background: $bgSecondary;
+  -webkit-text-fill-color: $textPrimary;
+  color: $textPrimary;
+}
+
+.lg {
+  @include large;
+}
+
+.md {
+  @include medium;
+}
+
+.sm {
+  @include small;
+}
+
+.xs {
+  @include xsmall;
+}

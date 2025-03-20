@@ -1,0 +1,63 @@
+@mixin large {
+  height: 48px;
+  padding: 10px 18px;
+  gap: 8px;
+  font: $fontP4;
+
+  &.icon {
+    padding: 14px;
+  }
+
+  svg {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+@mixin medium {
+  height: 40px;
+  padding: 8px 16px;
+  gap: 8px;
+  font: $fontP6;
+
+  &.icon {
+    padding: 12px;
+  }
+
+  svg {
+    height: 16px;
+    width: 16px;
+  }
+}
+
+@mixin small {
+  height: 32px;
+  padding: 8px 14px;
+  gap: 6px;
+  font: $fontP8;
+
+  &.icon {
+    padding: 8px;
+  }
+
+  svg {
+    height: 14px;
+    width: 14px;
+  }
+}
+
+@mixin xsmall {
+  height: 24px;
+  padding: 6px 12px;
+  gap: 4px;
+  font: $fontP10;
+
+  &.icon {
+    padding: 6px;
+  }
+
+  svg {
+    height: 10px;
+    width: 10px;
+  }
+}
