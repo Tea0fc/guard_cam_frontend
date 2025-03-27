@@ -18,7 +18,7 @@
       "entities/*": ["./src/entities/*"],
       "features/*": ["./src/features/*"],
       "widgets/*": ["./src/widgets/*"],
-      "pages/*": ["./src/pages/*"],
+      "pages/*": ["src/_pages/*"],
       "app/*": ["./src/_app/*"]
     },
     "target": "ES2017",

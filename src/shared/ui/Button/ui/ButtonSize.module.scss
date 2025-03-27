@@ -8,6 +8,11 @@
     padding: 14px;
   }
 
+  &.min {
+    padding: 0;
+    height: min-content;
+  }
+
   svg {
     height: 20px;
     width: 20px;
@@ -22,6 +27,11 @@
 
   &.icon {
     padding: 12px;
+  }
+
+  &.min {
+    padding: 0;
+    height: min-content;
   }
 
   svg {
@@ -40,6 +50,11 @@
     padding: 8px;
   }
 
+  &.min {
+    padding: 0;
+    height: min-content;
+  }
+
   svg {
     height: 14px;
     width: 14px;
@@ -50,10 +65,15 @@
   height: 24px;
   padding: 6px 12px;
   gap: 4px;
-  font: $fontP10;
+  font: $fontP9;
 
   &.icon {
     padding: 6px;
+  }
+
+  &.min {
+    padding: 0;
+    height: min-content;
   }
 
   svg {

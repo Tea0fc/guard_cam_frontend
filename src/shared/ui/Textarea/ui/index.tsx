@@ -35,7 +35,7 @@ export const Textarea: ForwardRefExoticComponent<
     disabled = false,
     helpText,
     helpTextType = 'default',
-    size = 'xs',
+    size = 'lg',
     onChange,
     ...rest
   } = props

@@ -43,7 +43,7 @@ export const Input: FC<IProps> = forwardRef<HTMLInputElement, IProps>(
       helpText,
       helpTextType = 'default',
       icon,
-      size = 'xs',
+      size = 'lg',
       borderRound = false,
       showReset = false,
       isPassword = false,
