@@ -1,4 +1,5 @@
 // import Script from 'next/script'
+import { redirect } from 'next/navigation'
 import type { FC } from 'react'
 import { memo, useState } from 'react'
 import type { FieldValues, SubmitHandler } from 'react-hook-form'
@@ -35,7 +36,9 @@ export const Login: FC = memo(() => {
   const [isError, setIsError] = useState('')
 
   // eslint-disable-next-line
-  const onSubmit: SubmitHandler<FieldValues> = data => {}
+  const onSubmit: SubmitHandler<FieldValues> = data => {
+    redirect(ROUTES.NODES)
+  }
 
   const handleChangeAndResetError = (
     evt: React.ChangeEvent<HTMLInputElement>,

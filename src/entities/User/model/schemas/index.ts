@@ -97,3 +97,17 @@ export const registrationSchema = z
     path: ['password_confirm'],
     message: ErrorMessages.PASSWORDS_DO_NOT_MATCH
   })
+
+export const confirmEmailSchema = z.object({
+  email: userEmailSchema
+})
+
+export const recoveryPasswordSchema = z
+  .object({
+    password: userPasswordSchema,
+    password_confirm: userPasswordSchema
+  })
+  .refine(data => data.password === data.password_confirm, {
+    path: ['password_confirm'],
+    message: ErrorMessages.PASSWORDS_DO_NOT_MATCH
+  })

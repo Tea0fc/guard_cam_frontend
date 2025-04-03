@@ -1,0 +1,26 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background-color: $bgSecondary;
+  border-radius: 16px;
+  padding: 10px;
+}
+
+.title {
+  font: $fontH6;
+}
+
+.fieldWrapper {
+  display: flex;
+  gap: 2px;
+}
+
+.label,
+.value {
+  font: $fontP6;
+}
+
+.label {
+  color: $textSecondary;
+}

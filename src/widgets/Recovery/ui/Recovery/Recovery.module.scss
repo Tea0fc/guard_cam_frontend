@@ -1,0 +1,46 @@
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.btnWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 50%;
+  align-self: center;
+}
+
+.error {
+  font: $fontP6;
+  color: $textCritical;
+}
+
+.mainBtn {
+  margin-top: 2px;
+}
+
+.btn span {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: $bgAccentHover;
+    width: 0;
+    transition: 0.3s;
+  }
+
+  @media (hover: hover) {
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}

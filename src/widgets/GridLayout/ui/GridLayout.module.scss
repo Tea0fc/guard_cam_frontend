@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 40px 20px;
+}
+
+.title {
+  font: $fontH2;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-template-rows: 2fr;
+  gap: 8px;
+
+  li:first-child {
+    display: grid;
+    grid-row: 1 / 3;
+  }
+}

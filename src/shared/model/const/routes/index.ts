@@ -3,7 +3,9 @@ export const ROUTES = {
   PROFILE: '/profile',
   LOGIN: '/login',
   REGISTRATION: '/registration',
-  RECOVERY: '/recovery'
+  RECOVERY: '/recovery',
+  NODES: '/nodes',
+  DEVICES: './devices'
 }
 
 export const pageTitles = [
@@ -11,5 +13,7 @@ export const pageTitles = [
   { link: ROUTES.PROFILE, title: 'Профиль' },
   { link: ROUTES.LOGIN, title: 'Авторизация' },
   { link: ROUTES.REGISTRATION, title: 'Регистрация' },
-  { link: ROUTES.RECOVERY, title: 'Восстановление пароля' }
+  { link: ROUTES.RECOVERY, title: 'Восстановление пароля' },
+  { link: ROUTES.NODES, title: 'Мои узлы' },
+  { link: ROUTES.DEVICES, title: 'Устройства' }
 ]
