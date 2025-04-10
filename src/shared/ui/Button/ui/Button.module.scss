@@ -25,6 +25,11 @@
   }
 }
 
+.splited {
+  justify-content: space-between;
+  gap: auto;
+}
+
 .grow {
   flex-grow: 1;
   max-width: 100%;

@@ -10,6 +10,8 @@ import type { IObjectFields } from 'features/ObjectInfo'
 import { ObjectInfo } from 'features/ObjectInfo'
 import { UserActions } from 'features/UserActions/ui'
 
+import { NodeList } from '../model'
+
 export const MyNodes: FC = memo(() => {
   const { user } = useUserStore()
   const { email, name, lastName, secondName } = user
@@ -20,7 +22,7 @@ export const MyNodes: FC = memo(() => {
   return (
     <GridLayout title="Мои узлы">
       <li>
-        <DevicesList />
+        <DevicesList list={NodeList} />
       </li>
       <li>
         <ObjectInfo title={userName} fieldList={userFields} />

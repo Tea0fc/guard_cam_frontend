@@ -11,7 +11,7 @@ interface IProps {
 export const DeviceIndicator: FC<IProps> = memo(({ isWorked }) => {
   return (
     <div className={classNames(module.wrapper, { [module.worked]: isWorked })}>
-      &nbsp
+      &#x200b;
     </div>
   )
 })

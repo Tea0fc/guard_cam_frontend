@@ -26,6 +26,7 @@ interface IProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   isCenter?: boolean
   isGrow?: boolean
   isMinHeight?: boolean
+  isSplited?: boolean
 }
 
 export const Button: FC<IProps> = memo(
@@ -41,6 +42,7 @@ export const Button: FC<IProps> = memo(
     rightIcon,
     isGrow = false,
     isMinHeight = false,
+    isSplited = false,
     borderRadius,
     className,
     ...rest
@@ -53,11 +55,12 @@ export const Button: FC<IProps> = memo(
             [module.center]: isCenter,
             [module.grow]: isGrow,
             [module.min]: isMinHeight,
-            [module.icon]: !!label === false
+            [module.icon]: !!label === false,
+            [module.splited]: isSplited
           },
           [module[mode], module[size], className]
         ),
-      [mode, size, className, isCenter, isGrow, label, isMinHeight]
+      [mode, size, className, isCenter, isGrow, label, isMinHeight, isSplited]
     )
 
     const borderRadiusStyle: React.CSSProperties = borderRadius
