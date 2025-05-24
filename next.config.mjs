@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
+  output: 'export',
   basePath: '/guard_cam_frontend',
   images: {
     remotePatterns: [
