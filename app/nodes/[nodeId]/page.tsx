@@ -6,10 +6,10 @@ export default MyDevices
 
 // eslint-disable-next-line
 export async function generateStaticParams() {
-  const posts = await fetch('https://.../posts').then(res => res.json())
+  const nodes = await fetch('https://.../nodes').then(res => res.json())
 
   // eslint-disable-next-line
-  return posts.map((post: any) => ({
-    slug: post.slug
+  return nodes.map((node: any) => ({
+    slug: node.slug
   }))
 }
