@@ -15,6 +15,7 @@ export const UserActions: FC = memo(() => {
         link={ROUTES.LOGIN}
         isGrow
         isCenter
+        target="_self"
       />
     </div>
   )
