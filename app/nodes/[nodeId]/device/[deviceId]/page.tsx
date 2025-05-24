@@ -3,7 +3,7 @@ import { DevicePage } from 'pages/DevicePage'
 
 // eslint-disable-next-line
 export function generateStaticParams() {
-  return [{ slug: [''] }]
+  return [{ nodeId: [''] }, { deviceId: [''] }]
 }
 
 export default DevicePage
