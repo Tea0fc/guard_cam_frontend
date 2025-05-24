@@ -1,0 +1,10 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/page": "app/page.js",
+  "/nodes/[nodeId]/device/[deviceId]/page": "app/nodes/[nodeId]/device/[deviceId]/page.js",
+  "/nodes/page": "app/nodes/page.js",
+  "/registration/page": "app/registration/page.js",
+  "/login/page": "app/login/page.js",
+  "/nodes/[nodeId]/page": "app/nodes/[nodeId]/page.js",
+  "/recovery/page": "app/recovery/page.js"
+}
